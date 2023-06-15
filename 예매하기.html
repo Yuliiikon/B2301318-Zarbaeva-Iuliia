@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>𝐖𝐀𝐓𝐄𝐑𝐁𝐎𝐌𝐁 𝟐𝟎𝟐𝟑</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #99b6e1;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    p {
+      color: #666666;
+      text-align: center;
+    }
+    
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .registration-form {
+      margin-top: 40px;
+    }
+    
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 99%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .submit-btn {
+      background-color: #ff9933;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .submit-btn:hover {
+      background-color: #e68a00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>𝐖𝐀𝐓𝐄𝐑𝐁𝐎𝐌𝐁 𝟐𝟎𝟐𝟑</h1>
+    <h1>SEOULㅣ2023.06.23-25(Fri-Sun) Sport Complex</h1>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url(img/fest.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      
+      /* 나머지 CSS 스타일 */
+    </style>
+
+    <p>이 멋진 축제에 참여해 보세요!</p>
+    
+    <div class="photo-gallery">
+      <div class="photo">
+        <img src="img/festival.jpg" alt="사진 1">
+      </div>
+      <div class="photo">
+        <img src="img/waterbomb.jpg" alt="사진 2">
+      </div>
+      <div class="photo">
+        <img src="img/waterbomb2.jpg" alt="사진 3">
+      </div>
+      <div class="photo">
+        <img src="img/waterbomb3.jpg" alt="사진 4">
+      </div>
+    </div>
+    
+    <form class="registration-form" action="submit_registration.php" method="POST">
+      <label for="name">이름:</label>
+      <p><input type="text" id="name" name="name"></p>
+      
+      <label for="email">이메일:</label>
+      <p><input type="email" id="email" name="email"></p>
+      
+      <label for="tickets">티켓 수량:</label>
+      <p><input type="number" id="tickets" name="tickets" min="1" max="7"></p>
+
+      <label>날짜/시간선택:</label>
+      <p><input type="radio" name="day1">2023.06.23(금) 13:00</p>
+      <p><input type="radio" name="day2">2023.06.24(토) 13:00</p>
+      <p><input type="radio" name="day3">2023.06.25(일) 13:00</p>
+      
+      <label for="message">메시지:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <p> <button><a href="결제하기.html" class="submit-btn" type="submit">예매하기</a></button></p>
+        
+      <p>*본 티켓은 총 7차 티켓까지 판매되며 각 회차의 티켓 매진 시 다음 회차의 티켓이 오픈됩니다.</p>
+      <p>*본 공연은 만 19세 이상 관람가입니다. (2023년 기준 2004년 12월 31일 출생자까지 관람 가능)</p>
+      <p>*입장 시 성인 인증을 위한 본인의 실물 신분증을 필히 지참해 주셔야 하며 미 지참 시 입장이 제한됩니다. 이로 인한 당일 환불은 불가합니다.</p>
+      <p>공연문의 : 010-4894-3070</p>
+    </form>
+  </div>
+</body>
+</html>
